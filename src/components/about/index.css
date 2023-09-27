@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    width: 85vw;
+    background-color: #8E3A8B;
+    margin: auto;
+    height: 85vh;
+}
+.picKristy{
+    max-width: 450px;
+    float: right;
+    margin: 90px;
+   
+}
+#aboutBio{
+    max-width: 400px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    background-color: #8e3a8b;
+   
+}
+h1{
+    background-color: #8e3a8b;
+}
+body{
+    background-color: #F4D6D4;
+}
