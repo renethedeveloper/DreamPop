@@ -3,13 +3,14 @@ import "./index.css"
 
 const Events = () => {
   return (
-    <div>
+      <div>
         <h1>Events</h1>
         <div className='container'>
-            <img src="public/images/DrawnKristy.jpg" alt="drawnKristy" />
+            <img className='drawnKristy' src="public/images/DrawnKristy.jpg" alt="drawnKristy" />
+        </div>
         </div>
      
-    </div>
+    
   )
 }
 
