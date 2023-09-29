@@ -8,13 +8,14 @@ import FAQ from './components/faq';
 import Products from './components/products';
 import Events from './components/events';
 import Footer from './components/footer';
+import Logo from './components/logo';
 
 function App() {
   return (
     
       <div>
+         <Logo/>
         <NavBar />
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
