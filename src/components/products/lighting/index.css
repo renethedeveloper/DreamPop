@@ -1,0 +1,48 @@
+
+
+
+
+.mainProductDiv{
+    display: grid;
+    margin: 8px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 50px 260px 260px 140px;
+    margin-top: 30px;
+
+}
+.mainProductDiv div{
+    margin: 8px;
+}
+.mainPic{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: goldenrod;
+}
+.paymentOptions{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: blue;
+}
+.specs{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: lightblue;
+}
+.gallery{
+   grid-column: span 2;
+   background-color: aqua;
+
+}
+.productTitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 40px;
+   }
+   .image{
+   max-width: 200px;
+   max-height: 200px;
+   
+  
+    
+   }

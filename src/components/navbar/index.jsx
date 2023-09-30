@@ -14,9 +14,9 @@ const NavBar = () => {
       <div className='dropdown'>
         <button className='dropdown'>Products &#9660;</button>
         <div className='dropdown-content'>
-          <Link to='/products/decor'>Decor</Link>
-          <Link to='/products/lighting'>Lighting</Link>
-          <Link to='/products/kitchen'>Kitchen</Link>
+          <Link className='dropDownMenuItem' to='/products/decor'>Decor</Link>
+          <Link className='dropDownMenuItem' to='/products/lighting'>Lighting</Link>
+          <Link className='dropDownMenuItem' to='/products/kitchen'>Kitchen</Link>
         </div>
       </div>
       </Link>
@@ -30,7 +30,7 @@ const NavBar = () => {
      
       </div>
       <div>
-        <input placeholder='Search for Anything' className="searchBar" type="text" />
+        <input id='searchBar' placeholder='Search for Anything' className="searchBar" type="text" />
       </div>
       </div>
        

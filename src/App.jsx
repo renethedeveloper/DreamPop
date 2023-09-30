@@ -9,6 +9,7 @@ import Products from './components/products';
 import Events from './components/events';
 import Footer from './components/footer';
 import Logo from './components/logo';
+import Lighting from './components/products/lighting';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/lighting" element={<Lighting />} />
+        
         </Routes>
         <Footer />
         
