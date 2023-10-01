@@ -14,14 +14,22 @@ const Lighting = () => {
 
       <div className='specs'>
         <h2>Red Vintage Acrylic Chair</h2>
-        <p>This vintage is chair is made in 1972 by Smyth and Bjorgensen. Marvel at the clean mid-century lines and red acrylic.</p> </div>
+        <p>This vintage is chair is made in 1972 by Smyth and Bjorgensen. Marvel at the clean mid-century lines and red acrylic.</p><br /><br /><br /><br /> <p>Price: $$$</p>   </div>
+       
 
-      <div className='paymentOptions'>Payment Options</div>
-      <div className='gallery'> Gallery</div>
+      <div className='paymentOptions'><div>Payments options</div></div>
+      <div className='gallery'> 
+      <div>pic1</div>
+      <div>pic2</div>
+      <div>pic3</div>
+      <div>pic4</div>
+      <div>pic5</div>
+      <div>pic6</div>
+    </div>
       
     </div>
     
   )
 }
 
-export default Lighting
+export default Lighting;

@@ -23,15 +23,27 @@
     grid-row: 3;
     background-color: blue;
 }
+.paymentOptions div{
+    margin: 50px;
+    height: 70%;
+    width: 80%;
+}
 .specs{
     grid-column: 2;
     grid-row: 2;
     background-color: lightblue;
 }
 .gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
    grid-column: span 2;
    background-color: aqua;
 
+}
+.gallery div{
+    height: 100%;
+    width: 100%;
 }
 .productTitle{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -40,9 +52,7 @@
     font-size: 40px;
    }
    .image{
-   max-width: 200px;
-   max-height: 200px;
-   
-  
-    
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
    }

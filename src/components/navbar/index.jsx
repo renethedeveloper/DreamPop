@@ -20,18 +20,19 @@ const NavBar = () => {
         </div>
       </div>
       </Link>
-      
+      <Link to='/contact'  className ="contact" className='link'>Contact</Link>
        <Link to="/"> <img className='logo' src="public/images/OldLogo.png" alt="dreampoplogo"/></Link>
       
-      <Link to='/contact'  className ="contact" className='link'>Contact</Link>
-      
-      <Link to='/faq' className='link'>FAQ</Link>
-      <Link to='/events' className='link'>Events</Link>
      
-      </div>
+      
+      <Link className="faq" to='/faq' className='link'>FAQ</Link>
+      <Link to='/events' className='link'>Events</Link>
       <div>
         <input id='searchBar' placeholder='Search for Anything' className="searchBar" type="text" />
       </div>
+     
+      </div>
+     
       </div>
        
   );
