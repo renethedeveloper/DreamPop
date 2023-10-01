@@ -1,10 +1,11 @@
 import React from 'react'
 import "./index.css"
+import CarouselContext from '../../context/carouselContext'
 
-const Lighting = () => {
+const Lighting = ({CarouselContext}) => {
   return (
    
-    
+      
     <div className='mainProductDiv'>
     <div className='productTitle'>Furniture</div>
         
@@ -19,14 +20,9 @@ const Lighting = () => {
 
       <div className='paymentOptions'><div>Payments options</div></div>
       <div className='gallery'> 
-      <div>pic1</div>
-      <div>pic2</div>
-      <div>pic3</div>
-      <div>pic4</div>
-      <div>pic5</div>
-      <div>pic6</div>
+      <CarouselContext/>
     </div>
-      
+   
     </div>
     
   )

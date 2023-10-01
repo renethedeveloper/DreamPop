@@ -10,6 +10,8 @@ import Events from './components/events';
 import Footer from './components/footer';
 import Logo from './components/logo';
 import Lighting from './components/products/lighting';
+import { useContext, createContext } from 'react';
+import CarouselContext from './components/context/carouselContext';
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/lighting" element={<Lighting />} />
+          <Route path="/products/lighting" element={<Lighting CarouselContext={CarouselContext} />} />
         
         </Routes>
         <Footer />
