@@ -6,7 +6,7 @@
     display: grid;
     margin: 8px;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 50px 260px 260px 140px;
+    grid-template-rows: 50px 260px 260px ;
     margin-top: 30px;
 
 }
@@ -33,18 +33,18 @@
     grid-row: 2;
     background-color: lightblue;
 }
-.gallery{
+/* .gallery{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
    grid-column: span 2;
    background-color: aqua;
 
-}
-.gallery div{
+} */
+/* .gallery div{
     height: 100%;
     width: 100%;
-}
+} */
 .productTitle{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     grid-row: 1;
@@ -55,4 +55,9 @@
    width: 100%;
    height: 100%;
    object-fit: cover;
+   } 
+    */
+   img{
+    max-height: 100px;
+    max-width: 100px;
    }

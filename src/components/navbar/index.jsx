@@ -12,7 +12,7 @@ const NavBar = () => {
       <Link to='/about' className='link'>About</Link>
       <Link to ="/products">
       <div className='dropdown'>
-        <button className='dropdown'>Products &#9660;</button>
+        <button className='dropdown'>Products &#9660;</button>  
         <div className='dropdown-content'>
           <Link className='dropDownMenuItem' to='/products/decor'>Decor</Link>
           <Link className='dropDownMenuItem' to='/products/lighting'>Lighting</Link>

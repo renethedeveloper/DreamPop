@@ -5,8 +5,9 @@ import CarouselContext from '../../context/carouselContext'
 const Lighting = ({CarouselContext}) => {
   return (
    
-      
+    <div>
     <div className='mainProductDiv'>
+      
     <div className='productTitle'>Furniture</div>
         
       <div className='mainPic'>
@@ -19,10 +20,12 @@ const Lighting = ({CarouselContext}) => {
        
 
       <div className='paymentOptions'><div>Payments options</div></div>
-      <div className='gallery'> 
-      <CarouselContext/>
-    </div>
-   
+      
+  
+    </div >
+    <div className='carousel'>
+      < CarouselContext/>
+      </div>
     </div>
     
   )

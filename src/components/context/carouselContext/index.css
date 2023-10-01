@@ -1,3 +1,5 @@
-.item{
-max-width: 200px;
-}
+#thumbnail{
+    max-width: 300px;
+    max-height: 200px;
+  
+} 

@@ -1,41 +1,28 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import "./index.css"
+import "./index.css";
+
+const responsive = {
+  0: { items: 1 },
+  568: { items: 2 },
+  768: { items: 3 },
+  1024: { items: 4 },
+};
+
+const items = [
+  <img  id="thumbnail" key="image1" src="/images/7pXvW1W.jpg" alt="image" />,
+  <img id="thumbnail"  key="image2" src="/public/images/leatherChair.jpeg" alt="leatherChair" />,
+  <img id="thumbnail"  key="image3" src="/public/images/tableSet.jpeg" alt="table" />,
+  <img id="thumbnail"  key="image4" src="/public/images/glassSideTable.jpeg" alt="sideTable" />,
+  <img id="thumbnail"  key="image5" src="/public/images/glassTable.jpeg" alt="glassTable" />,
+  <img id="thumbnail" key="image6" src="/public/images/pinkChair.jpeg" alt="pinkChair" />,
+  <img id="thumbnail" key="image7" src="/public/images/MirrorTowers.jpeg" alt="mirrorTowers" />,
+];
 
 const CarouselContext = () => {
-  const responsive = {
-    0: { items: 1 },
-    568: { items: 5 },
-    1024: { items: 6 },
-  };
-
-  const items = [
-    <div className="item">
-      <img src="/images/7pXvW1W.jpg" alt="image" />
-    </div>,
-    <div className="item">
-      <img src="/images/DrawnKristy.jpg" alt="kristy" />
-    </div>,
-    <div className="item">
-      <img src="/images/GreenHeadBandNagel.jpeg" alt="greenheadband" />
-    </div>,
-    <div className="item">
-      <img src="/images/NewVector.jpg" alt="nagel" />
-    </div>,
-    <div className="item">
-      <img src="/images/red-acrylic-chair.jpeg" alt="chair" />
-    </div>,
-     <div className="item">
-     <img src="/images/red-acrylic-chair.jpeg" alt="chair" />
-   </div>,
-    <div className="item">
-    <img src="/images/red-acrylic-chair.jpeg" alt="chair" />
-  </div>,
-  ];
-
   return (
-    <div>
+    <div className='carousel'>
       <AliceCarousel
         mouseTracking
         items={items}
@@ -43,7 +30,7 @@ const CarouselContext = () => {
         controlsStrategy="alternate"
       />
     </div>
-  );
-};
+  )
+}
 
 export default CarouselContext;
