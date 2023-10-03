@@ -4,6 +4,7 @@
     flex-shrink: 100px;
     height: 598px;
     margin-bottom:400px ;
+    position: relative;
 }
 .eventTitle{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -15,5 +16,15 @@
 .container{
     width: 90vw;
     height: 90vh;
+}
+.eventBox{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    top: 50%;
+    left:55%;
+    background-color:lightpink;
+    z-index: 2;
+   
 }
 

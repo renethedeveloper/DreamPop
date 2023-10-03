@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import CarouselContext from '../../context/carouselContext'
 import { useContext } from 'react'
 import { MyContext } from '../../context/carouselContext/APIContext'
@@ -7,7 +7,12 @@ import "./index.css"
 
 const Decor = () => {
 
-const {selectedImage, productsArray} = useContext(MyContext);
+const {selectedImage, productsArray, setSelectedImage} = useContext(MyContext);
+const [defaultImage, setDefaultImage] =useState("https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash?wid=180&hei=180&op_sharpen=1")
+
+useEffect(()=>{
+  setSelectedImage(defaultImage);
+},[])
 
 
 

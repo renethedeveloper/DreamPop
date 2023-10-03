@@ -14,6 +14,7 @@ import CarouselContext from './components/context/carouselContext';
 import Decor from './components/products/decor';
 import FAQ from './components/faq';
 import CustomSourcing from './components/products/customSourcing';
+import Kitchen from './components/products/kitchen';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/lighting" element={<Lighting CarouselContext={CarouselContext} />} />
           <Route path="/products/decor" element={<Decor CarouselContext={CarouselContext} />} />
+          <Route path="/products/kitchen" element={<Kitchen CarouselContext={CarouselContext} />} />
           <Route path="/products/customSourcing" element={<CustomSourcing/>}/> 
         
         </Routes>

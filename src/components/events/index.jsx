@@ -7,6 +7,7 @@ const Events = () => {
         <h1 className='eventTitle'>Events</h1>
         <div className='container'>
             <img id='drawnKristy' src="public/images/DrawnKristy.jpg" alt="drawnKristy" />
+            <div className='eventBox'>Event Box</div>
         </div>
         </div>
      
