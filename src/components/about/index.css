@@ -1,7 +1,7 @@
 .container{
-    display: flex;
-    width: 90vw;
-     background-color: #8E3A8B;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    background-color: #8E3A8B;
     margin: auto;
     margin-top: 50px;
     height: 598px;
@@ -24,8 +24,8 @@
     margin-left: 70px;
     margin: 40px;
     margin-top: 100px;
- /* background-color: #8e3a8b;    */
- background-color: aquamarine;
+ background-color: #8e3a8b;   
+
    
 }
 

@@ -21,17 +21,20 @@
 .paymentOptions{
     grid-column: 2;
     grid-row: 3;
-    background-color: blue;
+    background-color: rgb(255, 192, 203);
+
+   
 }
 .paymentOptions div{
     margin: 50px;
     height: 70%;
     width: 80%;
+    background-color: pink;
 }
 .specs{
     grid-column: 2;
     grid-row: 2;
-    background-color: lightblue;
+    background-color: pink;
 }
 /* .gallery{
     display: flex;
@@ -61,3 +64,6 @@
     max-height: 100px;
     max-width: 100px;
    }
+  /* .productTitle, .productDecription{
+    background-color: pink;
+  } */

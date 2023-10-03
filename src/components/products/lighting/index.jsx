@@ -7,7 +7,10 @@ import { MyContext } from '../../context/carouselContext/APIContext'
 const Lighting = () => {
   
   
-  const {selectedImage, setSelectedImage} = useContext(MyContext);
+  const {selectedImage, productsArray} = useContext(MyContext);
+
+
+  const selectedProduct = productsArray.find((product)=>product.image.url===selectedImage)
  
 
   return (
@@ -22,9 +25,8 @@ const Lighting = () => {
       </div>
 
       <div className='specs'>
-        <h2>standIn</h2>
-
-        <p>The decription should go here.</p><br /><br /><br /><br /> <p>Price: $$$</p>   </div>
+      <h2> {selectedProduct? selectedProduct.productTitle: ""}</h2>
+        <p>{selectedProduct ? selectedProduct.productDescription : ''}</p><br /><br /><br /><br /> <p>Price:{selectedProduct ? selectedProduct.productRegularPrice : ''} </p>   </div>
        
 
       <div className='paymentOptions'><div>Payments options</div></div>

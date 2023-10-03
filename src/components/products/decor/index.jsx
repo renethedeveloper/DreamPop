@@ -2,13 +2,18 @@ import React, { createContext, useState } from 'react'
 import CarouselContext from '../../context/carouselContext'
 import { useContext } from 'react'
 import { MyContext } from '../../context/carouselContext/APIContext'
+import "./index.css"
+
 
 const Decor = () => {
 
-const {selectedImage, setSelectedImage} = useContext(MyContext);
+const {selectedImage, productsArray} = useContext(MyContext);
 
-console.log("my console" + selectedImage)
 
+
+
+
+const selectedProduct = productsArray.find((product)=>product.image.url===selectedImage)
 
   
   return (
@@ -21,12 +26,12 @@ console.log("my console" + selectedImage)
       <div className='mainPic'>
       
         
-      <img className="mainImage" src={selectedImage} alt="mainImage" />
+      <img className="image" src={selectedImage} alt="mainImage" />
       </div>
 
       <div className='specs'>
-        <h2> Title of the Image</h2>
-        <p>The description should go here.</p><br /><br /><br /><br /> <p>Price: $$$</p>   </div>
+        <h2> {selectedProduct? selectedProduct.productTitle: ""}</h2>
+        <p>{selectedProduct ? selectedProduct.productDescription : ''}</p><br /><br /><br /><br /> <p>Price:{selectedProduct ? selectedProduct.productRegularPrice : ''} </p>   </div>
        
 
       <div className='paymentOptions'><div>Payments options</div></div>
