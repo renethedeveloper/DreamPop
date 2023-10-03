@@ -17,6 +17,7 @@ const NavBar = () => {
           <Link className='dropDownMenuItem' to='/products/decor'>Decor</Link>
           <Link className='dropDownMenuItem' to='/products/lighting'>Lighting</Link>
           <Link className='dropDownMenuItem' to='/products/kitchen'>Kitchen</Link>
+          <Link className='dropDownMenuItem' to='/products/customSourcing'>Custom Sourcing</Link>
         </div>
       </div>
       </div>

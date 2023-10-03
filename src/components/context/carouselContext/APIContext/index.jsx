@@ -40,7 +40,7 @@ const ContextProvider = ({ children }) => {
   }, []); 
 
   return (
-    <MyContext.Provider value ={{selectedImage, productsArray }}>
+    <MyContext.Provider value ={{selectedImage, setSelectedImage, productsArray }}>
       {children}
     </MyContext.Provider>
   );

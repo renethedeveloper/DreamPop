@@ -5,9 +5,10 @@ import { useContext } from 'react'
 import { MyContext } from '../../context/carouselContext/APIContext'
 
 const Lighting = () => {
-
+  
   
   const {selectedImage, setSelectedImage} = useContext(MyContext);
+ 
 
   return (
    

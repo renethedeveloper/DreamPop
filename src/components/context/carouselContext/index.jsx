@@ -30,16 +30,18 @@ const responsive = {
 
 const CarouselContext = ({children}) => {
 
-    const {productsArray} = useContext(MyContext);
+    const {productsArray, setSelectedImage} = useContext(MyContext);
 
-    const {selectedImage, setSelectedImage}= useState(null)
+        
+   
     
     
     
     
-    const  handleImage = (productObject) => {
+    const  handleImage = (url) => {
     
-    setSelectedImage(productObject.image.url)
+    setSelectedImage(url)
+    console.log(url)
     }
     
     

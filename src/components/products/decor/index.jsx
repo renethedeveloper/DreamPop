@@ -7,6 +7,8 @@ const Decor = () => {
 
 const {selectedImage, setSelectedImage} = useContext(MyContext);
 
+console.log("my console" + selectedImage)
+
 
   
   return (
