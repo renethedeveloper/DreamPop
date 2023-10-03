@@ -10,7 +10,7 @@ const NavBar = () => {
      
       <Link to='/' className='link'>Home</Link>
       <Link to='/about' className='link'>About</Link>
-      <Link to ="/products">
+      <div to ="/products">
       <div className='dropdown'>
         <button className='dropdown'>Products &#9660;</button>  
         <div className='dropdown-content'>
@@ -19,13 +19,13 @@ const NavBar = () => {
           <Link className='dropDownMenuItem' to='/products/kitchen'>Kitchen</Link>
         </div>
       </div>
-      </Link>
-      <Link to='/contact'  className ="contact" className='link'>Contact</Link>
-       <Link to="/"> <img className='logo' src="public/images/OldLogo.png" alt="dreampoplogo"/></Link>
+      </div>
+      <Link to='/contact'  className ="contact link">Contact</Link>
+       <Link to="/"> <img className='logo' src="/public/images/OldLogo.png" alt="dreampoplogo"/></Link>
       
      
       
-      <Link className="faq" to='/faq' className='link'>FAQ</Link>
+      <Link className="faq Link" to='/faq'>FAQ</Link>
       <Link to='/events' className='link'>Events</Link>
       <div>
         <input id='searchBar' placeholder='Search for Anything' className="searchBar" type="text" />

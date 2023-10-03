@@ -4,7 +4,6 @@ import NavBar from './components/navbar';
 import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
-import FAQ from './components/faq';
 import Products from './components/products';
 import Events from './components/events';
 import Footer from './components/footer';
@@ -12,6 +11,8 @@ import Logo from './components/logo';
 import Lighting from './components/products/lighting';
 import { useContext, createContext } from 'react';
 import CarouselContext from './components/context/carouselContext';
+import Decor from './components/products/decor';
+import FAQ from './components/faq';
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} />
+          <Route path="/faq" element={<FAQ CarouselContext={CarouselContext}  />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/lighting" element={<Lighting CarouselContext={CarouselContext} />} />
+          <Route path="/products/decor" element={<Decor CarouselContext={CarouselContext} />} />
         
         </Routes>
         <Footer />

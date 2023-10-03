@@ -1,29 +1,30 @@
-import React, { useState } from 'react'
-import "./index.css"
+import React, { createContext, useState } from 'react'
 import CarouselContext from '../../context/carouselContext'
 import { useContext } from 'react'
 import { MyContext } from '../../context/carouselContext/APIContext'
 
-const Lighting = () => {
+const Decor = () => {
+
+const {selectedImage, setSelectedImage} = useContext(MyContext);
+
 
   
-  const {selectedImage, setSelectedImage} = useContext(MyContext);
-
   return (
    
     <div>
     <div className='mainProductDiv'>
       
-    <div className='Title'>Lighting</div>
+    <div className='Title'>Decor</div>
         
       <div className='mainPic'>
-      <img className='image' src={selectedImage} alt="mainImage" />
+      
+        
+      <img className="mainImage" src={selectedImage} alt="mainImage" />
       </div>
 
       <div className='specs'>
-        <h2>standIn</h2>
-
-        <p>The decription should go here.</p><br /><br /><br /><br /> <p>Price: $$$</p>   </div>
+        <h2> Title of the Image</h2>
+        <p>The description should go here.</p><br /><br /><br /><br /> <p>Price: $$$</p>   </div>
        
 
       <div className='paymentOptions'><div>Payments options</div></div>
@@ -38,4 +39,4 @@ const Lighting = () => {
   )
 }
 
-export default Lighting;
+export default Decor;

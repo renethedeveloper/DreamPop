@@ -3,3 +3,8 @@
     max-height: 200px;
   
 } 
+.productTitle{
+    font-size: 15px;
+    color:#E47DC1 ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

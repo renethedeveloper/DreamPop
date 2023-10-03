@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { useContext } from 'react';
 
-const FAQ = () => {
+const FAQ = ({  }) => {
+  
+  
   return (
     <div>
-        <h3>faq</h3>
-      
+     
     </div>
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;

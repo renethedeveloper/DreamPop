@@ -45,7 +45,7 @@
     height: 100%;
     width: 100%;
 } */
-.productTitle{
+.Title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     grid-row: 1;
     grid-column: 1;
