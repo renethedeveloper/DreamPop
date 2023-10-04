@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import "./index.css"
 import CarouselContext from '../../context/carouselContext'
-import { useContext } from 'react'
 import { MyContext } from '../../context/carouselContext/APIContext'
 
 const Lighting = () => {

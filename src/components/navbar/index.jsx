@@ -26,7 +26,7 @@ const NavBar = () => {
       
      
       
-      <Link className="faq Link" to='/faq'>FAQ</Link>
+      <Link className="faq links" to='/faq'>FAQ</Link>
       <Link to='/events' className='link'>Events</Link>
       <div>
         <input id='searchBar' placeholder='Search for Anything' className="searchBar" type="text" />

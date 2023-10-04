@@ -36,18 +36,7 @@
     grid-row: 2;
     background-color: pink;
 }
-/* .gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   grid-column: span 2;
-   background-color: aqua;
 
-} */
-/* .gallery div{
-    height: 100%;
-    width: 100%;
-} */
 .Title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     grid-row: 1;
@@ -64,6 +53,3 @@
     max-height: 100px;
     max-width: 100px;
    }
-  /* .productTitle, .productDecription{
-    background-color: pink;
-  } */
