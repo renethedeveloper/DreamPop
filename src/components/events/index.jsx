@@ -11,7 +11,7 @@ const Events = () => {
               <ul className='eventList'>
               <li>NightMarket</li>
               <br />
-            <li>NightMarket 2: Shady sisters</li>
+            <li className='eventListItem'>NightMarket 2: Shady sisters</li>
             <br />
             <li>Pop-Up Sunday</li>
             <br />

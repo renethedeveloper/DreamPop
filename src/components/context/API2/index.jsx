@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import "./index.css";
-import { MyContext } from './APIContext';
+import "./index.css"
+import { MyContext } from '../carouselContext/APIContext';
 
 
 const responsive = {
@@ -24,27 +24,24 @@ const responsive = {
 
 
 
-const CarouselContext = ({children}) => {
+const Carousel2 = ({children}) => {
 
-    const {productsArray, setSelectedImage1} = useContext(MyContext);
-   
+    const {productsArray, setSelectedImage2} = useContext(MyContext);
 
         
    
+    
     
     
     
     
     const  handleImage = (url) => {
     
-    setSelectedImage1(url)
-    console.log(url)
-    }
-
-   
+      setSelectedImage2(url)
+      console.log(url)
+      }
     
    
-        
     
     
 
@@ -72,4 +69,4 @@ const productsJsx = productsArray.map((productObject) => {
   )
 }
 
-export default CarouselContext;
+export default Carousel2;

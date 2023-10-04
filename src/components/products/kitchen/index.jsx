@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from 'react'
-import CarouselContext from '../../context/carouselContext'
+import Carousel3 from '../../context/API3';
 import { useContext } from 'react'
-import { MyContext } from '../../context/carouselContext/APIContext'
+import "./index.css"
+import { MyContext } from '../../context/carouselContext/APIContext';
+
 
 const Kitchen = () => {
   
   
-  const {selectedImage, productsArray, setSelectedImage} = useContext(MyContext);
+  const {selectedImage3, productsArray, setSelectedImage3} = useContext(MyContext);
 
   const [defaultImage, setDefaultImage] =useState("https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash?wid=180&hei=180&op_sharpen=1")
 
 useEffect(()=>{
-  setSelectedImage(defaultImage);
+  if(selectedImage3===undefined){
+  setSelectedImage3(defaultImage);
+  }
 },[])
 
 
-  const selectedProduct = productsArray.find((product)=>product.image.url===selectedImage)
+  const selectedProduct = productsArray.find((product)=>product.image.url===selectedImage3)
  
 
   return (
@@ -26,20 +30,20 @@ useEffect(()=>{
     <div className='Title'>Kitchen</div>
         
       <div className='mainPic'>
-      <img className='image' src={selectedImage} alt="mainImage" />
+      <img className='image' src={selectedImage3} alt="mainImage" />
       </div>
 
       <div className='specs'>
-      <h2> {selectedProduct? selectedProduct.productTitle: ""}</h2>
-        <p>{selectedProduct ? selectedProduct.productDescription : ''}</p><br /><br /><br /><br /> <p>Price:{selectedProduct ? selectedProduct.productRegularPrice : ''} </p>   </div>
+      <h4> {selectedProduct? selectedProduct.productTitle: ""}</h4>
+        <h3>{selectedProduct ? selectedProduct.productDescription : ''}</h3><br /><br /><br /><br /> <p>Price:{selectedProduct ? selectedProduct.productRegularPrice : ''} </p>   </div>
        
 
-      <div className='paymentOptions'><div>Payments options</div></div>
+      <div className='paymentOptions'>Payments options</div>
       
   
     </div >
     <div className='carousel'>
-      < CarouselContext/>
+      < Carousel3/>
       </div>
     </div>
     

@@ -21,8 +21,7 @@
 .paymentOptions{
     grid-column: 2;
     grid-row: 3;
-    background-color:  #000001 ;
-    color: white;
+    background-color: #000001 ;
 
    
 }
@@ -30,12 +29,13 @@
     margin: 50px;
     height: 70%;
     width: 80%;
-    background-color:  #000001 ;
+    background-color: #000001 ;
 }
 .specs{
     grid-column: 2;
     grid-row: 2;
     background-color: #000001 ;
+    color: white;
 }
 
 .Title{

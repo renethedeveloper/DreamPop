@@ -6,7 +6,9 @@ const MyContext = createContext();
 const ContextProvider = ({ children }) => {
 
   const [productsArray, setProductsArray] = useState([]);
-  const [selectedImage, setSelectedImage] = useState();
+  const [selectedImage1, setSelectedImage1] = useState();
+  const [selectedImage2, setSelectedImage2] = useState();
+  const [selectedImage3, setSelectedImage3] = useState();
  
 
   useEffect(() => {
@@ -40,7 +42,7 @@ const ContextProvider = ({ children }) => {
   }, []); 
 
   return (
-    <MyContext.Provider value ={{selectedImage, setSelectedImage, productsArray }}>
+    <MyContext.Provider value ={{selectedImage1, setSelectedImage1, productsArray,selectedImage2, setSelectedImage2,selectedImage3, setSelectedImage3 }}>
       {children}
     </MyContext.Provider>
   );

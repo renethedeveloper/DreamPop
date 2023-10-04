@@ -15,26 +15,27 @@
 }
 .mainPic{
     grid-column: span 1;
+    border: solid black;
     grid-row: span 2;
     background-color: goldenrod;
 }
 .paymentOptions{
     grid-column: 2;
     grid-row: 3;
-    background-color: rgb(255, 192, 203);
-
+    color: white;
+    background-color: #000001 ;
    
 }
 .paymentOptions div{
     margin: 50px;
     height: 70%;
     width: 80%;
-    background-color: pink;
+    background-color: #000001 ;
 }
 .specs{
     grid-column: 2;
     grid-row: 2;
-    background-color: pink;
+    background-color:  #000001 ;
 }
 
 .Title{
@@ -52,4 +53,8 @@
    img{
     max-height: 100px;
     max-width: 100px;
+   }
+
+   h4,h2,p{
+    background-color: #000001;
    }

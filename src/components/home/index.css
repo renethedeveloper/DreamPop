@@ -3,10 +3,18 @@
     width: 90vw;
     margin-left: 50px; 
     height: 598px;
+}
+#galleryImage{
 
-   
-   
-   
-  }
+  height: 300px;
+  width: 300px;
+  
+
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
   
   

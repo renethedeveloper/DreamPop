@@ -10,11 +10,12 @@ import Footer from './components/footer';
 import Logo from './components/logo';
 import Lighting from './components/products/lighting';
 import { useContext, createContext } from 'react';
-import CarouselContext from './components/context/carouselContext';
+import Carousel from './components/context/carouselContext';
 import Decor from './components/products/decor';
 import FAQ from './components/faq';
 import CustomSourcing from './components/products/customSourcing';
 import Kitchen from './components/products/kitchen';
+import Carousel2 from './components/context/API2';
 
 function App() {
   return (
@@ -27,11 +28,11 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ CarouselContext={CarouselContext}  />} />
+          <Route path="/faq" element={<FAQ Carousel={Carousel}  />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/lighting" element={<Lighting CarouselContext={CarouselContext} />} />
-          <Route path="/products/decor" element={<Decor CarouselContext={CarouselContext} />} />
-          <Route path="/products/kitchen" element={<Kitchen CarouselContext={CarouselContext} />} />
+          <Route path="/products/lighting" element={<Lighting Carousel2={Carousel2} />} />
+          <Route path="/products/decor" element={<Decor Carousel={Carousel} />} />
+          <Route path="/products/kitchen" element={<Kitchen Carousel={Carousel} />} />
           <Route path="/products/customSourcing" element={<CustomSourcing/>}/> 
         
         </Routes>
