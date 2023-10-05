@@ -8,6 +8,12 @@ const Home = () => {
     <div>
         
         <img className='mainImage' src="public/images/showRoomMain.png" alt="showroom" />
+
+        <img className='map' src="public/images/mapToShop.png" alt="map" />
+        <p className='directions'>Under Drip Tea Market!!</p>
+        
+        
+       
         <div className='gallery'>
         <img id='galleryImage' src="public/images/flamingoMirror.jpeg" alt="flamingoMirror" />
         <img id='galleryImage' src="public/images/tulipLampsGold.jpeg" alt="tulipLamp" />

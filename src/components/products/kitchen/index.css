@@ -13,24 +13,9 @@
 .mainProductDiv div{
     margin: 8px;
 }
-.mainPic{
-    grid-column: span 1;
-    grid-row: span 2;
-    background-color: goldenrod;
-}
-.paymentOptions{
-    grid-column: 2;
-    grid-row: 3;
-    background-color: #000001 ;
 
-   
-}
-.paymentOptions div{
-    margin: 50px;
-    height: 70%;
-    width: 80%;
-    background-color: #000001 ;
-}
+
+
 .specs{
     grid-column: 2;
     grid-row: 2;
@@ -54,6 +39,11 @@
     max-height: 100px;
     max-width: 100px;
    }
-   h4,h2,p{
-    background-color: #000001;
+   .productDescription{
+   
    }
+   .productTitle{
+    background-color: #000001;
+    }
+   
+   

@@ -20,7 +20,9 @@ useEffect(()=>{
 
 
 
-const selectedProduct = productsArray.find((product)=>product.image.url===selectedImage1)
+const selectedProduct = productsArray.find((product)=>product.imageUrl===selectedImage1)
+
+console.log(selectedProduct)
 
   
   return (
@@ -37,11 +39,12 @@ const selectedProduct = productsArray.find((product)=>product.image.url===select
       </div>
 
       <div className='specs'>
-      <h4> {selectedProduct? selectedProduct.productTitle: ""}</h4>
-        <p>{selectedProduct ? selectedProduct.productDescription : ''}</p><br /><br /><br /><br /> <p>Price:{selectedProduct ? selectedProduct.productRegularPrice : ''} </p>   </div>
+      <h4 className='productTitle'> {selectedProduct? selectedProduct.productTitle: ""}</h4>
+        <p className='productDescription'>{selectedProduct ? selectedProduct.productDescription : ''}</p><br /><br /><br /><br /> <p className='price'>Price:{selectedProduct ? selectedProduct : ''} </p>   </div>
        
 
       <div className='paymentOptions'>Payments options</div>
+      
       
   
     </div >

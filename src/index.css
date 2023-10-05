@@ -3,3 +3,31 @@
   text-decoration: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.price{
+  background-color: #000001;
+  color: #E47DC1;
+}
+.mainPic{
+  grid-column: span 1;
+  grid-row: span 2;
+  border: solid black;
+  
+  }
+  .carouselImage{
+    border: solid black;
+  }
+  .paymentOptions{
+    grid-column: 2;
+    grid-row: 3;
+    color:#E47DC1;
+    background-color: #000001 ;
+   
+}
+.paymentOptions div{
+  margin: 50px;
+  height: 70%;
+  width: 80%;
+  color:#E47DC1;
+  
+  background-color:  #000001 ;
+}
