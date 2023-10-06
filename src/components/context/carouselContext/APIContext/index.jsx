@@ -9,7 +9,10 @@ const ContextProvider = ({ children }) => {
   const [selectedImage2, setSelectedImage2] = useState();
   const [selectedImage3, setSelectedImage3] = useState();
 
+
+
   useEffect(() => {
+
     const fetchData = async () => {
       const options = {
         method: 'GET',
@@ -35,13 +38,27 @@ const ContextProvider = ({ children }) => {
         const response = await axios.request(options);
         console.log(response.data);
         setProductsArray(response.data.products);
+        localStorage.setItem("products",JSON.stringify(response.data.products))
+
       } catch (error) {
         console.error(error);
       }
     };
 
-    fetchData();
+    let productsData = localStorage.getItem("products")
+    productsData = JSON.parse(productsData)
+    if(productsData){
+      setProductsArray([...productsData]) 
+    } else {
+      fetchData();
+    }
+
+    
+
+    
   }, []); 
+ 
+  
 
   return (
     <MyContext.Provider

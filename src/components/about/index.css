@@ -6,6 +6,7 @@
     margin-top: 50px;
     height: 598px;
     box-sizing: border-box;
+    box-shadow: 2px 2px 10px 2px gray;
 
 }
 .picKristy{
@@ -15,18 +16,17 @@
     position: absolute;
     right: 70px;
     box-sizing: border-box;
+    
    
 }
 #aboutBio{
-    max-width: 520px;
-    font-weight: 800;
+    max-width: 400px;
     font-size: 1em;
-    margin-left: 70px;
+    margin-left: 90px;
     margin: 40px;
     margin-top: 100px;
- background-color: #8e3a8b;   
-
-   
+    background-color: #8e3a8b; 
+     color: rgb(0, 0, 1);
 }
 
 body{

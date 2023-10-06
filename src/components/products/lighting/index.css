@@ -14,11 +14,7 @@
     margin: 8px;
 }
 
-.specs{
-    grid-column: 2;
-    grid-row: 2;
-    background-color:  #000001 ;
-}
+
 
 .Title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

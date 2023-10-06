@@ -35,10 +35,10 @@ const Carousel2 = ({children}) => {
     
     
     
-    const  handleImage = (imageURl) => {
+    const  handleImage2 = (url) => {
     
-      setSelectedImage2(imageURl)
-      console.log(imageURl)
+      setSelectedImage2("http://" +url)
+      console.log(url)
       }
     
    
@@ -49,10 +49,11 @@ const Carousel2 = ({children}) => {
 
 
 const productsJsx = productsArray.map((productObject) => {
+  console.log(productObject);
 
    return(<div key={productObject.id}>
     <h3 className='carouselTitle'>{productObject.name}</h3>
-    <img className='carouselImage' onClick={() => handleImage(productObject.products.imageUrl)} src={productObject.imageUrl} alt={productObject.id} />
+    <img className='carouselImage' onClick={() => handleImage2(productObject.imageUrl)} src={"http://"+ productObject.imageUrl} alt={productObject.id} />
 
   </div>) 
 })

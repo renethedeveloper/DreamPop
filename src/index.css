@@ -10,11 +10,11 @@
 *{
   border-radius: 4px;
   text-decoration: none;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
-}
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  }
+
 .price{
-  background-color: #000001;
+  /* background-color: #000001; */
   color: #E47DC1;
 }
 .mainPic{
@@ -32,7 +32,7 @@
     grid-column: 2;
     grid-row: 3;
     color:#E47DC1;
-    background-color: #000001 ;
+    /* background-color: #000001 ; */
    
 }
 .paymentOptions div{
@@ -41,5 +41,11 @@
   width: 80%;
   color:#E47DC1;
   
-  background-color:  #000001 ;
+  /* background-color:  #000001 ; */
+}
+
+.specs{
+  grid-column: 2;
+  grid-row: 2;
+  /* background-color:  #000001 ; */
 }
