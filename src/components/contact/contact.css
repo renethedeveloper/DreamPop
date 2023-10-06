@@ -13,6 +13,7 @@
     width: 100%;
     margin: none;
     grid-row:  1;
+    
     }
 .contactAndEmail{
     grid-column: 1;

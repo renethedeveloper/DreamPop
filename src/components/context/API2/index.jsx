@@ -52,7 +52,7 @@ const productsJsx = productsArray.map((productObject) => {
 
    return(<div key={productObject.id}>
     <h3 className='carouselTitle'>{productObject.name}</h3>
-    <img className='carouselImage' onClick={() => handleImage(productObject.imageUrl)} src={productObject.imageUrl} alt={productObject.id} />
+    <img className='carouselImage' onClick={() => handleImage(productObject.products.imageUrl)} src={productObject.imageUrl} alt={productObject.id} />
 
   </div>) 
 })

@@ -22,7 +22,7 @@ const NavBar = () => {
       </div>
       </div>
       <Link to='/contact'  className ="contact link">Contact</Link>
-       <Link to="/"> <img className='logo' src="/public/images/OldLogo.png" alt="dreampoplogo"/></Link>
+       <Link to="/"> <img className='logo' src="/images/OldLogo.png" alt="dreampoplogo"/></Link>
       
      
       

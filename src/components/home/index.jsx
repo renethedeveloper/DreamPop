@@ -7,17 +7,17 @@ const Home = () => {
   return (
     <div>
         
-        <img className='mainImage' src="public/images/showRoomMain.png" alt="showroom" />
+        <img className='mainImage' src="/images/showRoomMain.png" alt="showroom" />
 
-        <img className='map' src="public/images/mapToShop.png" alt="map" />
+        <img className='map' src="/images/mapToShop.png" alt="map" />
         <p className='directions'>Under Drip Tea Market!!</p>
         
         
        
         <div className='gallery'>
-        <img id='galleryImage' src="public/images/flamingoMirror.jpeg" alt="flamingoMirror" />
-        <img id='galleryImage' src="public/images/tulipLampsGold.jpeg" alt="tulipLamp" />
-        <img id='galleryImage' src="public/images/leatherChair.jpeg" alt="leatherChair" />
+        <img id='galleryImage' src="/images/flamingoMirror.jpeg" alt="flamingoMirror" />
+        <img id='galleryImage' src="/images/tulipLampsGold.jpeg" alt="tulipLamp" />
+        <img id='galleryImage' src="/images/leatherChair.jpeg" alt="leatherChair" />
         </div>
         
       

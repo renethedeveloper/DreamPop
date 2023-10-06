@@ -1,7 +1,17 @@
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
 *{
   border-radius: 4px;
   text-decoration: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
 .price{
   background-color: #000001;
@@ -12,9 +22,11 @@
   grid-row: span 2;
   border: solid black;
   
+  
   }
   .carouselImage{
     border: solid black;
+    max-width: 100px;
   }
   .paymentOptions{
     grid-column: 2;
