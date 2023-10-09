@@ -10,6 +10,7 @@ const Decor = () => {
 
   useEffect(() => {
     if (selectedImage1 === undefined) {
+      
       setSelectedImage1(defaultImage);
     }
   }, [defaultImage, selectedImage1, setSelectedImage1]);
