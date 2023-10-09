@@ -18,6 +18,9 @@ const Decor = () => {
 
   console.log(selectedProduct);
 
+
+ 
+
   return (
     <div>
       <div className='mainProductDiv'>
@@ -26,7 +29,7 @@ const Decor = () => {
           <img className="image" src={selectedImage1} alt="mainImage" />
         </div>
         <div className='specs'>
-          <h4 className='productTitle'> {selectedProduct ? selectedProduct : "Product Name Not Found"}</h4>
+          <h4 className='productTitle'> {selectedProduct ? selectedProduct.name : "Product Name Not Found"}</h4>
           <p className='productDescription'>{selectedProduct ? selectedProduct.description : 'Product Description Not Found'}</p>
           <p className='price'>Price: {selectedProduct ? selectedProduct.price : 'Price Not Found'}</p>
         </div>
