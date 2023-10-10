@@ -1,5 +1,6 @@
 import React from 'react'
 import "./index.css"
+import KristyPic.jpg from  "public/images/KristyPic.png"
 
 
 
