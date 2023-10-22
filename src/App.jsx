@@ -16,13 +16,18 @@ import FAQ from './components/faq';
 import CustomSourcing from './components/products/customSourcing';
 import Kitchen from './components/products/kitchen';
 import Carousel2 from './components/context/API2';
+import ProductForm from './backend/admin/ProductForm';
+import "lb4"
+import { Admin, Resource } from 'react-admin';
 
 function App() {
   return (
-    
+      
       <div>
+        <Admin dataProvider={lb4Provider}
          <Logo/>
         <NavBar />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
